@@ -26,6 +26,9 @@ nav#main-nav {
     line-height: 21px;
     text-decoration: none;
 }
+button.navbar-toggler {
+    display: none!important;
+}
 
 /* Map background Display */
 div#go-airports-submit-bg {

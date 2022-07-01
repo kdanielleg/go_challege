@@ -33,11 +33,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<input type="submit" name="airport_file_submit" id="airport_file_submit" value="Upload" class="" />
 						<?php include get_stylesheet_directory() . '/inc/airport_form_submit.php'; ?>
 					</form><!-- form#go-airports-submit-form -->
-					<div id="go-airports-submit_box" class="col-10 col-sm-8 col-md-6 col-lg-4">
+					<div id="go-airports-submit_box" class="col-xs-11 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
 						<h2 id="go-airports-submit_box_title" class="text-white">Share your favorite airports!</h2>
 						<h4 id="go-airports-submit_box_sub" class="text-white fw-normal my-3">Upload a CSV document with your favorite airports. We'll put them on a map, and provide a sharable url.</h4>
-						<div id="go-airports-submit_box_form_drop" class="d-flex justify-content-start align-items-center p-3 text-white bg-primary bg-opacity-50  rounded-8 position-relative" ondrop="go_dropHandler(event);" ondragover="go_dragOverHandler(event);" ondragleave="go_dragLeaveHandler(event);">
-							<button type="button" class="btn btn-light px-4" onclick="document.getElementById('airport_file_upload').click();">Select File</button>
+						<div id="go-airports-submit_box_form_drop" class="d-flex flex-xs-column flex-sm-row justify-content-start align-items-center p-3 text-white bg-primary bg-opacity-50  rounded-8 position-relative" ondrop="go_dropHandler(event);" ondragover="go_dragOverHandler(event);" ondragleave="go_dragLeaveHandler(event);">
+							<button type="button" class="btn btn-light px-4 mb-0 mb-xs-3 mb-sm-0" onclick="document.getElementById('airport_file_upload').click();">Select File</button>
 							<p class="mb-0 ps-4"><small>Drag and drop a CSV file, or select one from your computer</small></p>
 						</div><!-- #go-airports-submit-box -->
 					</div><!-- #go-airports-submit-box -->

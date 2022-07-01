@@ -34,10 +34,10 @@ if(have_rows('airport_locations')) :
 		<div id="go-airports-bg" class="px-0 position-absolute top-0 start-0 bottom-0 end-0 w-100 h-100">
 			<div id="map" class="w-100 h-100"></div>
 		</div>
-		<div id="go-airports-share" class="col-12 col-sm-10 col-md-8 col-lg-5">
-			<div id="go-airports-share_box" class="d-flex justify-content-between align-items-center bg-primary bg-opacity-50 rounded-8 p-3 position-relative">
+		<div id="go-airports-share" class="col-xs-11 col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-5">
+			<div id="go-airports-share_box" class="d-flex flex-xs-column flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-xxl-row justify-content-between align-items-center bg-primary bg-opacity-50 rounded-8 p-3 position-relative">
 				<?php if(have_rows('airport_locations')) : ?>
-					<p id="go-airports-share_box_text" class="text-white mb-0"><strong class="fw-semibold">Nice airports!</strong> Your sharable URL is:</p>
+					<p id="go-airports-share_box_text" class="text-white mb-0 mb-xs-3 mb-sm-3 mb-md-0"><strong class="fw-semibold">Nice airports!</strong> Your sharable URL is:</p>
 					<div id="go-airports-share_box_link" class="d-flex justify-content-between rounded-3 p-2 bg-white">
 						<span id="go-airports-share_box_link_val" class="d-block px-1 me-2"><?php the_permalink(); ?></span>
 						<button id="go-airports-share_box_link_a" class="d-block px-1 py-0 ms-2 btn btn-light" onclick="goClipboard()">
@@ -45,7 +45,7 @@ if(have_rows('airport_locations')) :
 						</button>
 					</div>
 				<?php else: ?>
-					<p id="go-airports-share_box_text" class="text-white mb-0"><strong class="fw-semibold">Oops!</strong> You didn't include any airports.</p>
+					<p id="go-airports-share_box_text" class="text-white mb-0 px-1 me-2 mb-xs-3 mb-sm-3 mb-md-0"><strong class="fw-semibold">Oops!</strong> You didn't include any airports.</p>
 					<a id="go-airports-share_box_back" class="btn btn-light" href="<?php echo esc_url(home_url()); ?>" role="button">Try Again</a>
 				<?php endif; ?>
 			</div> <!-- #go-airports-share_box -->
