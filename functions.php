@@ -43,9 +43,6 @@ function theme_enqueue_styles() {
 
 	$go_directory_custom = array( 'stylesheet_directory_uri' => get_stylesheet_directory_uri() );
 	wp_localize_script( 'child-understrap-scripts', 'directory_uri', $go_directory_custom );
-	
-	//add modernizer via CDN
-	wp_enqueue_script( 'modernizr-scripts', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js');
 
 	//google maps JS
 	wp_enqueue_script('gmaps-scripts', 'https://maps.googleapis.com/maps/api/js?key='.GO_GMAPS_KEY.'&callback=initMap&v=weekly', '', '', true);
