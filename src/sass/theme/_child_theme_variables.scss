@@ -1,0 +1,14 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+
+
+$blue: #021019;
+$primary: $blue;
+$light: #fff;
+$font-family-sans-serif: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !default;
+$border-radius-lg: 0.5rem;
+$h6-font-size: 0.875rem;
+$h4-font-size: 1.15rem;
+$h4-line-height: 1.15em;
+$h2-font-size: 2.25rem;

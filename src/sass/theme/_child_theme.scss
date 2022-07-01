@@ -1,0 +1,45 @@
+/* Site BG and Utils */
+html {
+    background-color: $primary;
+}
+body {
+    --bs-body-bg: $primary;
+}
+.rounded-8 {
+    border-radius: $border-radius-lg;
+}
+.btn-light:hover {
+    opacity: 0.5;
+}
+
+/* Header Styles */
+#wrapper-navbar {
+    position: sticky;
+    z-index: 1;
+}
+nav#main-nav {
+    --bs-bg-opacity: 0;
+}
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-brand a {
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+/* Map background Display */
+div#go-airports-submit-bg {
+    z-index: -1;
+}
+
+
+/**Box Display Placement**/
+div#go-airports-submit,
+div#go-airports-entry-content {
+    min-height: 84vh;
+}
+
+/**Submit Box**/
+#go-airports-submit_box_form_drop.dragging {
+    background: $primary;
+}
